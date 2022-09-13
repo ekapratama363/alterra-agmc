@@ -1,0 +1,922 @@
+{
+	"info": {
+		"_postman_id": "d54789c5-bdaf-4831-bec5-29a3bb1f7d5b",
+		"name": "golang mini course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14571760"
+	},
+	"item": [
+		{
+			"name": "books",
+			"item": [
+				{
+					"name": "get book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_book}}/book",
+							"host": [
+								"{{base_url_book}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get book",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"book"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 02:32:15 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "153"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"created_at\": \"2019-02-18T00:00:00\",\n        \"updated_at\": \"2019-02-18T00:00:00\",\n        \"deleted_at\": \"2019-02-18T00:00:00\",\n        \"id\": 1234,\n        \"title\": \"Judul Buku Satu\",\n        \"isbn\": \"1-234-5678-9101112-13\",\n        \"writer\": \"Dr. Who\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get book by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_book}}/book/1234",
+							"host": [
+								"{{base_url_book}}"
+							],
+							"path": [
+								"book",
+								"1234"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get book by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_book}}/book/1234",
+									"host": [
+										"{{base_url_book}}"
+									],
+									"path": [
+										"book",
+										"1234"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 02:33:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"id\": 1234,\n    \"title\": \"Judul Buku Satu\",\n    \"isbn\": \"1-234-5678-9101112-13\",\n    \"writer\": \"Dr. Who\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create new book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_book}}/book",
+							"host": [
+								"{{base_url_book}}"
+							],
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create new book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_book}}/book",
+									"host": [
+										"{{base_url_book}}"
+									],
+									"path": [
+										"book"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 02:34:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"client_id\": 1234,\n    \"client_key\": \"CLIENT01\",\n    \"client_secret\": \"SECRET01\",\n    \"status\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "update book by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_book}}/book/1234",
+							"host": [
+								"{{base_url_book}}"
+							],
+							"path": [
+								"book",
+								"1234"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update book by id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_book}}/book/1234",
+									"host": [
+										"{{base_url_book}}"
+									],
+									"path": [
+										"book",
+										"1234"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 02:36:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"id\": 1234,\n    \"title\": \"Judul Buku Satu\",\n    \"isbn\": \"1-234-5678-9101112-13\",\n    \"writer\": \"Dr. Who\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete book by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_book}}/book/1234",
+							"host": [
+								"{{base_url_book}}"
+							],
+							"path": [
+								"book",
+								"1234"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete book by id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url_book}}/book/1234",
+									"host": [
+										"{{base_url_book}}"
+									],
+									"path": [
+										"book",
+										"1234"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 02:38:07 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "klines",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const ts  = Date.now();",
+							"pm.environment.set(\"timestamp\", ts);",
+							" ",
+							"let paramsObject = {};",
+							" ",
+							"const binance_api_secret = pm.environment.get(\"api_secret\");",
+							" ",
+							"const parameters = pm.request.url.query;",
+							" ",
+							"parameters.map((param) => {",
+							"    if (param.key != 'signature' && ",
+							"        param.key != 'timestamp' && ",
+							"        !is_empty(param.value) &&",
+							"        !is_disabled(param.disabled)) {",
+							"            paramsObject[param.key] = param.value;",
+							"            //console.log(encodeURIComponent(param.value));",
+							"            //pm.environment.set(param.key, encodeURIComponent(param.value));",
+							"    }",
+							"})",
+							"        ",
+							"Object.assign(paramsObject, {'timestamp': ts});",
+							" ",
+							"if (binance_api_secret) {",
+							"    const queryString = Object.keys(paramsObject).map((key) => {",
+							"        return `${key}=${paramsObject[key]}`;",
+							"    }).join('&');",
+							"    console.log(queryString);",
+							"    const signature = CryptoJS.HmacSHA256(queryString, binance_api_secret).toString();",
+							"    pm.environment.set(\"signature\", signature);",
+							"}",
+							" ",
+							" ",
+							"function is_disabled(str) {",
+							"    return str == true;",
+							"}",
+							" ",
+							"function is_empty(str) {",
+							"    if (typeof str == 'undefined' ||",
+							"        !str || ",
+							"        str.length === 0 || ",
+							"        str === \"\" ||",
+							"        !/[^\\s]/.test(str) ||",
+							"        /^\\s*$/.test(str) ||",
+							"        str.replace(/\\s/g,\"\") === \"\")",
+							"    {",
+							"        return true;",
+							"    }",
+							"    else",
+							"    {",
+							"        return false;",
+							"    }",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-MBX-APIKEY",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1/klines?symbol=BTCUSDT&interval=1d&startTime=1662045514000&endTime=1662563914000",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"klines"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "interval",
+							"value": "1d"
+						},
+						{
+							"key": "startTime",
+							"value": "1662045514000"
+						},
+						{
+							"key": "endTime",
+							"value": "1662563914000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "klines",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-MBX-APIKEY",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/klines?symbol=BTCUSDT&interval=1d&startTime=1662045514000&endTime=1662563914000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"klines"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "BTCUSDT"
+								},
+								{
+									"key": "interval",
+									"value": "1d"
+								},
+								{
+									"key": "startTime",
+									"value": "1662045514000"
+								},
+								{
+									"key": "endTime",
+									"value": "1662563914000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "182"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 02:05:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-mbx-uuid",
+							"value": "0c800f25-49c7-4f5a-86c8-ac374143cd90"
+						},
+						{
+							"key": "x-mbx-used-weight",
+							"value": "3"
+						},
+						{
+							"key": "x-mbx-used-weight-1m",
+							"value": "3"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-WebKit-CSP",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 70fdfa773982aee8e5e56c054ca0a9cc.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "SIN2-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "I7QYiWH_-tWG5FbicC1QjGboktJihUY2wCp12EVk29yEsZik06U33w=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        1662508800000,\n        \"19107.80000000\",\n        \"50000.00000000\",\n        \"15668.40000000\",\n        \"19284.86000000\",\n        \"5892.50051000\",\n        1662595199999,\n        \"111900543.96863158\",\n        99487,\n        \"3814.98588700\",\n        \"72458500.50944591\",\n        \"0\"\n    ]\n]"
+				}
+			]
+		},
+		{
+			"name": "account",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const ts  = Date.now();",
+							"pm.environment.set(\"timestamp\", ts);",
+							" ",
+							"let paramsObject = {};",
+							" ",
+							"const binance_api_secret = pm.environment.get(\"api_secret\");",
+							" ",
+							"const parameters = pm.request.url.query;",
+							" ",
+							"parameters.map((param) => {",
+							"    if (param.key != 'signature' && ",
+							"        param.key != 'timestamp' && ",
+							"        !is_empty(param.value) &&",
+							"        !is_disabled(param.disabled)) {",
+							"            paramsObject[param.key] = param.value;",
+							"            //console.log(encodeURIComponent(param.value));",
+							"            //pm.environment.set(param.key, encodeURIComponent(param.value));",
+							"    }",
+							"})",
+							"        ",
+							"Object.assign(paramsObject, {'timestamp': ts});",
+							" ",
+							"if (binance_api_secret) {",
+							"    const queryString = Object.keys(paramsObject).map((key) => {",
+							"        return `${key}=${paramsObject[key]}`;",
+							"    }).join('&');",
+							"    console.log(queryString);",
+							"    const signature = CryptoJS.HmacSHA256(queryString, binance_api_secret).toString();",
+							"    pm.environment.set(\"signature\", signature);",
+							"}",
+							" ",
+							" ",
+							"function is_disabled(str) {",
+							"    return str == true;",
+							"}",
+							" ",
+							"function is_empty(str) {",
+							"    if (typeof str == 'undefined' ||",
+							"        !str || ",
+							"        str.length === 0 || ",
+							"        str === \"\" ||",
+							"        !/[^\\s]/.test(str) ||",
+							"        /^\\s*$/.test(str) ||",
+							"        str.replace(/\\s/g,\"\") === \"\")",
+							"    {",
+							"        return true;",
+							"    }",
+							"    else",
+							"    {",
+							"        return false;",
+							"    }",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-MBX-APIKEY",
+						"value": "{{api_key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v3/account?signature={{signature}}&timestamp={{timestamp}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v3",
+						"account"
+					],
+					"query": [
+						{
+							"key": "signature",
+							"value": "{{signature}}"
+						},
+						{
+							"key": "timestamp",
+							"value": "{{timestamp}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-MBX-APIKEY",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v3/account?signature={{signature}}&timestamp={{timestamp}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"account"
+							],
+							"query": [
+								{
+									"key": "signature",
+									"value": "{{signature}}"
+								},
+								{
+									"key": "timestamp",
+									"value": "{{timestamp}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "254"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 02:26:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-mbx-uuid",
+							"value": "4d8ee4e2-e497-412b-839e-b6d5e6575b63"
+						},
+						{
+							"key": "x-mbx-used-weight",
+							"value": "20"
+						},
+						{
+							"key": "x-mbx-used-weight-1m",
+							"value": "20"
+						},
+						{
+							"key": "content-encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "X-WebKit-CSP",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 37bf70171215d870fd5bb56cab5030c4.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "SIN2-P1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "-J1Yu6RlT1sHGcjyjZLdhcpwbUN7J7RQDPDxKMcOhgqdgr3xlH0p1g=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"makerCommission\": 0,\n    \"takerCommission\": 0,\n    \"buyerCommission\": 0,\n    \"sellerCommission\": 0,\n    \"canTrade\": true,\n    \"canWithdraw\": false,\n    \"canDeposit\": false,\n    \"brokered\": false,\n    \"updateTime\": 1663034118782,\n    \"accountType\": \"SPOT\",\n    \"balances\": [\n        {\n            \"asset\": \"BNB\",\n            \"free\": \"1000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"BTC\",\n            \"free\": \"1.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"BUSD\",\n            \"free\": \"10000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"ETH\",\n            \"free\": \"100.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"LTC\",\n            \"free\": \"500.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"TRX\",\n            \"free\": \"500000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"USDT\",\n            \"free\": \"10000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"XRP\",\n            \"free\": \"50000.00000000\",\n            \"locked\": \"0.00000000\"\n        }\n    ],\n    \"permissions\": [\n        \"SPOT\"\n    ]\n}"
+				}
+			]
+		}
+	]
+}
