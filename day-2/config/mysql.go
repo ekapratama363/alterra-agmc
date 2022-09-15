@@ -1,6 +1,7 @@
 package config
 
 import (
+	"day-2/models"
 	"os"
 
 	"gorm.io/driver/mysql"
@@ -23,5 +24,5 @@ func ConnectDB() {
 	if err != nil {
 		panic("Cannot connect database")
 	}
-	DB.AutoMigrate()
+	DB.AutoMigrate(&models.Users{})
 }
