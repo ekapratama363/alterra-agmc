@@ -3,6 +3,8 @@ package routes
 import (
 	mysql "day-2/config"
 	"day-2/controllers"
+	auth "day-2/middlewares"
+	log "day-2/middlewares"
 
 	"github.com/labstack/echo/v4"
 )
@@ -11,6 +13,9 @@ func Api() {
 
 	mysql.ConnectDB()
 	route := echo.New()
+
+	log.LogMiddleware(route)
+	auth.AuthMiddleware(route)
 
 	// Restricted group
 	userRoute := route.Group("/user")
